@@ -25,13 +25,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding:5px;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background-color: #6f1b3a;
+  color:white;
 }
 
 .navbar-links {
   display: flex;
   column-gap: 30px;
+  color:white
 }
 
 .navbar-links a {
@@ -40,6 +43,7 @@ body {
   font-size: 1.1em;
   font-weight: 500;
   transition: color 0.3s ease, transform 0.3s ease;
+  color:white
 }
 
 .navbar-links a:hover {
@@ -52,29 +56,30 @@ body {
   display: none;
 }
 
-/*side-navbar*/
-.side-navbar{
+/* Side Navbar */
+.side-navbar {
   background-color: #1d232c;
-  width:50% ;
+  width: 50%;
   height: 100%;
   position: fixed;
   top: 0;
-  left:-60%;
+  left: -60%;
   padding: 20px;
-  color:white;
+  color: white;
   transition: 1s;
   z-index: 1000;
-  
-  
 }
-.side-navbar-links{
-  margin-bottom: 30px;    
+
+.side-navbar-links {
+  margin-bottom: 30px;
 }
-.side-navbar-links a{
+
+.side-navbar-links a {
   text-decoration: none;
   color: white;
 }
-.side-navbar-links a:hover{
+
+.side-navbar-links a:hover {
   text-decoration: underline;
 }
 
@@ -97,8 +102,7 @@ body {
 .image-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover
-
+  object-fit: cover;
 }
 
 .overlay-text {
@@ -138,7 +142,7 @@ body {
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 3px solid #3498db;
+  border-bottom: 3px solid #6f1b3a;
   padding-bottom: 10px;
 }
 
@@ -150,12 +154,12 @@ body {
 .education h2,
 .skills-section h2 {
   font-size: 1.8em;
-  color: #2980b9;
+  color: #6f1b3a;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
-  border-bottom: 2px solid #2980b9;
+  border-bottom: 2px solid #6f1b3a;
   padding-bottom: 5px;
 }
 
@@ -217,14 +221,14 @@ body {
 
 .skills-list li::before {
   content: "•";
-  color: #3498db;
+  color: #6f1b3a;
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .skills-list li:hover {
-  color: #3498db;
+  color: #6f1b3a;
 }
 
 /* Header Section */
@@ -259,7 +263,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #3498db;
+  color: #6f1b3a;
 }
 
 /* Section Styling */
@@ -267,6 +271,7 @@ nav ul li a:hover {
   text-align: center;
   margin-bottom: 30px;
 }
+
 
 h2 {
   font-size: 2.8em;
@@ -279,7 +284,7 @@ h3 {
   font-size: 1.8em;
   margin-top: 25px;
   margin-bottom: 15px;
-  color: #2980b9;
+  color: #6f1b3a;
 }
 
 /* Section with Background */
@@ -364,47 +369,62 @@ ul li {
 }
 
 .certifications-list li::before {
-  content: "✔";
-  color: #3498db;
+ 
+  color: #6f1b3a;
   position: absolute;
   left: 0;
   top: 0;
 }
 
-/* Footer Styling */
+/* Footer Section */
 .footer {
   padding: 40px;
-  background-color: #1d232c;
+  background-color: #6f1b3a;
   color: #f2f4f7;
   text-align: center;
   font-size: 1.1em;
   margin-top: 50px;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+.foot{
+  margin-top:-50px;
 }
 
 .footer a {
-  color: #3498db;
+  color: #6f1b3a;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
+  color: white;
 }
 
 .footer a:hover {
-  color: #ff6f61;
+  color: green;
 }
 
 .footer p {
   font-size: 1.1em;
 }
 
+.footer .footer-links {
+  text-align: center;
+}
+
+.footer .footer-links a {
+  margin: 0 10px;
+}
+
 /* Download Resume Button */
 .download-section {
   text-align: center;
   margin-top: 60px;
+  padding-bottom: 275px;
 }
 
+
 .download-btn {
-  background-color: #3498db;
+  background-color: #6f1b3a;
   color: white;
   padding: 15px 30px;
   font-size: 1.2em;
@@ -415,22 +435,15 @@ ul li {
 }
 
 .download-btn:hover {
-  background-color: #2980b9;
+  background-color: #6f1b3a;
   transform: scale(1.05);
 }
 
-/* Optional: Add some padding for the page content */
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #f4f7f6;
-  color: #333;
-  padding: 20px;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 /* Media Queries */
 @media screen and (max-width: 900px) {
+
   .education-container,
   .skills-container {
     padding: 30px;
@@ -467,7 +480,7 @@ body {
   }
 
   .Navbar {
-    flex-direction: column;
+    flex-direction: row;
     padding: 15px;
   }
 
