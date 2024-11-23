@@ -1,0 +1,481 @@
+/* Reset default styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  color: white;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.navbar-links {
+  display: flex;
+  column-gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  color: #2ecc71;
+  transform: translateY(-3px);
+}
+
+.navbar-menu-toggle {
+  display: none;
+}
+
+/*side-navbar*/
+.side-navbar{
+  background-color: #1d232c;
+  width:50% ;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left:-60%;
+  padding: 20px;
+  color:white;
+  transition: 1s;
+  z-index: 1000;
+  
+  
+}
+.side-navbar-links{
+  margin-bottom: 30px;    
+}
+.side-navbar-links a{
+  text-decoration: none;
+  color: white;
+}
+.side-navbar-links a:hover{
+  text-decoration: underline;
+}
+
+.side-navbar-links a:hover {
+  color: #2ecc71;
+}
+
+.side-navbar.active {
+  left: 0;
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover
+
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #0c0534;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Education Section */
+.education-container,
+.skills-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.education-container:hover,
+.skills-container:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.education-container h1,
+.skills-container h1 {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 10px;
+}
+
+.education,
+.skills-section {
+  margin-bottom: 40px;
+}
+
+.education h2,
+.skills-section h2 {
+  font-size: 1.8em;
+  color: #2980b9;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+}
+
+/* Flexbox for Education & Skills Cards */
+.education .education-item,
+.skills-section .skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.education .education-item:hover,
+.skills-section .skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.education .education-item h3,
+.skills-section .skill-item h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+  color: #2980b9;
+}
+
+.education .education-item p,
+.skills-section .skill-item p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #34495e;
+}
+
+.education .education-item p strong,
+.skills-section .skill-item p strong {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+/* Example Skill List */
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  position: relative;
+  padding-left: 25px;
+  margin: 12px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.skills-list li::before {
+  content: "•";
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.skills-list li:hover {
+  color: #3498db;
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+/* Section Styling */
+.project-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2.8em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8em;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #2980b9;
+}
+
+/* Section with Background */
+section {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f7f6;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+section#food-delivery,
+section#movie-ticket {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(112, 110, 110, 0.1);
+  margin: 30px 0;
+  padding: 30px;
+}
+
+section p {
+  font-size: 1.1em;
+  margin-bottom: 25px;
+  color: #34495e;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 1.1em;
+  margin: 12px 0;
+  color: #2c3e50;
+}
+
+/* CTA Button Styling */
+.cta-button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #e05d53;
+  transform: scale(1.05);
+}
+
+/* Certifications Section */
+#certifications {
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin-top: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#certifications .project-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.certifications-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.certifications-list li {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  padding-left: 25px;
+  position: relative;
+}
+
+.certifications-list li::before {
+  content: "✔";
+  color: #3498db;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Footer Styling */
+.footer {
+  padding: 40px;
+  background-color: #1d232c;
+  color: #f2f4f7;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 50px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ff6f61;
+}
+
+.footer p {
+  font-size: 1.1em;
+}
+
+/* Download Resume Button */
+.download-section {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.download-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* Optional: Add some padding for the page content */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+  .education-container,
+  .skills-container {
+    padding: 30px;
+    margin-bottom: 40px;
+  }
+
+  .education-container h1,
+  .skills-container h1 {
+    font-size: 2em;
+  }
+
+  .cta-button,
+  .download-btn {
+    font-size: 1.1em;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-menu-toggle {
+    display: block;
+  }
+
+  .side-navbar {
+    left: -100%;
+  }
+
+  .side-navbar.active {
+    left: 0;
+  }
+
+  .Navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .skills-container h1 {
+    font-size: 1.6em;
+  }
+
+  .education-container h1 {
+    font-size: 1.6em;
+  }
+}

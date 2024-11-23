@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume-Making resume ">
+    <title>Resume</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!--My Css-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav class="Navbar">
+        <h1>Resume</h1>
+
+        <div class="navbar-links">
+
+            <p class="navbar-links"><a href="AboutMe.html">AboutMe</a></p>
+            <p class="navbar-links"><a href="Education.html">Education</a></p>
+            <p class="navbar-links"><a href="Skills.html">Skills</a></p>
+            <p class="navbar-links"><a href="Projects & Certifications.html">Projects & Certifications</a></p>
+            <p class="navbar-links"><a href="ResumeDownload.html">ResumeDownload</a></p>
+
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+
+    </nav>
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-links"><a href="AboutMe.html">AboutMe</a></p>
+            <p class="side-navbar-links"><a href="Education.html">Education</a></p>
+            <p class="side-navbar-links"><a href="Skills.html">Skills</a></p>
+            <p class="side-navbar-links"><a href="Projects & Certifications.html">Projects & Certifications</a></p>
+            <p class="side-navbar-links"><a href="ResumeDownload.html">ResumeDownload</a></p>
+
+        </div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1>My Projects</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#food-delivery">Food Delivery Platform</a></li>
+                <li><a href="#movie-ticket">Movie Ticket Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- E-Commerce Platform for Food Delivery & Restaurant Management -->
+    <section id="food-delivery">
+        <div class="project-header">
+            <h2>E-Commerce Platform for Food Delivery & Restaurant Management</h2>
+            <p><a href="https://subarna-r244.github.io/Eatzy/" target="_blank">Visit the Project</a></p>
+        </div>
+        <p><strong>Description:</strong> Developed an E-Commerce platform for Food Delivery and Restaurant Management
+            Website using HTML, CSS, and JavaScript, showcasing projects and skills, and increasing online visibility by
+            80%.</p>
+        <p><strong>Development Tools:</strong> Utilized VS Code for efficient coding and debugging, improving
+            development speed by 60%.</p>
+        <p><strong>Responsive Design:</strong> Created a responsive design to ensure compatibility across devices,
+            enhancing user experience by 90%.</p>
+        <p><strong>Link to the project:</strong> <a href="https://subarna-r244.github.io/Eatzy/" target="_blank">Eatzy
+                Project</a></p>
+    </section>
+
+    <section id="food-delivery-features">
+        <h3>Key Features of the Food Delivery & Restaurant Management Platform:</h3>
+        <ul>
+            <li>Responsive design ensuring compatibility across all devices (Mobile, Tablet, Desktop).</li>
+            <li>VS Code utilized for efficient development, improving debugging speed by 60%.</li>
+            <li>Increased online visibility and user engagement, contributing to an 80% rise in traffic.</li>
+        </ul>
+    </section>
+
+    <!-- Movie Ticket Booking System -->
+    <section id="movie-ticket">
+        <div class="project-header">
+            <h2>Movie Ticket Booking System</h2>
+        </div>
+        <p><strong>Description:</strong> Developed a Movie Ticket Booking System using MySQL, Tkinter (Python), and user
+            authentication to allow users to browse movies, book tickets, and interact with a database for real-time
+            updates.</p>
+        <p><strong>MySQL Database Interaction:</strong> The system uses mysql.connector to connect to the MySQL
+            database, perform queries, and fetch/update data for movie listings, show timings, user authentication, and
+            ticket bookings.</p>
+        <p><strong>User Authentication:</strong> Login functionality is implemented with a query to validate user
+            credentials (username and password) against the users table, providing a secure login mechanism.</p>
+        <p><strong>Tkinter GUI:</strong> The GUI is created using Tkinter, where users interact with the system to log
+            in, select movies, view shows, and book tickets. The interface includes input fields, buttons, and dropdown
+            menus for user interaction.</p>
+        <p><strong>Backend Logic for Booking:</strong> When booking tickets, the system checks seat availability in the
+            shows table and updates the seat count upon successful booking, while adding the booking details to the
+            bookings table and managing payment status.</p>
+        <p><strong>Link to the project:</strong> <a href="https://github.com/Subarna-R244/python-and-sql.git"
+                target="_blank">Movie Ticket Booking System</a></p>
+    </section>
+
+    <section id="movie-ticket-features">
+        <h3>Key Features of the Movie Ticket Booking System:</h3>
+        <ul>
+            <li>Secure user authentication using MySQL for login and password validation.</li>
+            <li>Real-time ticket booking with seat availability checks and booking confirmations.</li>
+            <li>Backend logic to handle movie show timings, bookings, and payment management.</li>
+            <li>Interactive Tkinter GUI for smooth user interaction.</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <div class="project-header">
+            <h2>Certifications</h2>
+        </div>
+        <ul class="certifications-list">
+            <li><strong>Programming in C and C++ at NIIT</strong></li>
+            <li><strong>Programming in Java at NIIT</strong></li>
+            <li><strong>Kaggle Python Course - Certificate of Completion</strong></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Projects | All Rights Reserved</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

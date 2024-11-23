@@ -1,0 +1,74 @@
+<!-- ResumeDownload.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume-Making resume ">
+    <title>Resume</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="Navbar">
+        <h1>Resume</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-links"><a href="AboutMe.html">About Me</a></p>
+            <p class="navbar-links"><a href="Education.html">Education</a></p>
+            <p class="navbar-links"><a href="Skills.html">Skills</a></p>
+            <p class="navbar-links"><a href="Projects & Certifications.html">Projects & Certifications</a></p>
+            <p class="navbar-links"><a href="ResumeDownload.html">ResumeDownload</a></p>
+        </div>
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--side navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right;" onclick="closenavbar()">
+            <i class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-links"><a href="AboutMe.html">AboutMe</a></p>
+            <p class="side-navbar-links"><a href="Education.html">Education</a></p>
+            <p class="side-navbar-links"><a href="Skills.html">Skills</a></p>
+            <p class="side-navbar-links"><a href="Projects & Certifications.html">Projects & Certifications</a></p>
+            <p class="side-navbar-links"><a href="ResumeDownload.html">ResumeDownload</a></p>
+
+        </div>
+    </div>
+    <!-- Resume Download Section -->
+    <div class="download-section">
+        <h2>Click below to download my resume</h2>
+        <!-- Resume Download Button -->
+        <a href="path_to_your_resume_file/resume.pdf" download="Subarna_Shri_Devi_Resume.pdf">
+            <button class="download-btn">
+                <i class="fa-solid fa-download"></i> Download Resume
+            </button>
+        </a>
+    </div>
+
+
+
+    <!-- Include JS if necessary -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
